@@ -54,6 +54,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CORS_ALLOWED_ORIGINS = [
+    "https://drivebox-production.up.railway.app",
+    # Add other trusted origins if needed
+]
 
 ROOT_URLCONF = 'django_web_app.urls'
 
