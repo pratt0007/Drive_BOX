@@ -1,6 +1,16 @@
 # Drive_BOX
 
-This project was done by me as a assignment for an internship.
+This project was a fundamental backend project that allowed me to apply and enhance my skills in Django, specifically focusing on CRUD operations, email verification, and password handling using tokens. It was a great learning experience that provided valuable insights into model design and the workings of the Django administrator.
+
+## Overview-
+
+Drive-BOX is a collaborative platform where users can log in, upload their projects, and collaborate with others. The project is hosted on a web hosting website named "railway," making it accessible to users worldwide. Its functionality is similar to that of GitHub, providing a user-friendly interface for uploading and managing projects.
+
+## Technical Details
+The project consists of two main applications: "blog" and "user." In the "user" application, I implemented templates for login, logout, profile, and registration pages. Utilising Django's inbuilt crispy forms library, I ensured a responsive and visually appealing design for these pages.
+
+For the "blog" application, I incorporated static files for basic CSS, JS, and Bootstrap to enhance the website's visual appearance. The template section includes pages like "home," "about," and a "base" page, which serves as the inherited page for the entire application. By implementing the base page, I achieved consistency throughout the project, making it more user-friendly.
+
 
 <h2>Assignment Problem Statement:</h2>
 
