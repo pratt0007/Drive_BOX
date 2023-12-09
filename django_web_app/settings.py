@@ -83,12 +83,18 @@ WSGI_APPLICATION = 'django_web_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '4CC3FBF3EG-415f664A*65GfC2dE2cg1',
+        'HOST': 'viaduct.proxy.rlwy.net',  # Set to the host where your PostgreSQL server is running
+        'PORT': '51258',       # Set to the port your PostgreSQL server is listening on
     }
 }
+
 
 
 # Password validation
