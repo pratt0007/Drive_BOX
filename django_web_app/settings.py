@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     "blog.apps.BlogConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
-    "crispy_bootstrap4",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -42,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "whitenoise.runserver_nostatic",
+    
 ]
 
 MIDDLEWARE = [
@@ -87,11 +87,11 @@ WSGI_APPLICATION = "django_web_app.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "railway",
+        "NAME": "drivebox",
         "USER": "postgres",
-        "PASSWORD": "4CC3FBF3EG-415f664A*65GfC2dE2cg1",
-        "HOST": "viaduct.proxy.rlwy.net",  # Set to the host where your PostgreSQL server is running
-        "PORT": "51258",       # Set to the port your PostgreSQL server is listening on
+        "PASSWORD": "root",
+        "HOST": "localhost",  # Set to the host where your PostgreSQL server is running
+        "PORT": "5432",        # Set to the port your PostgreSQL server is listening on
     }
 }
 
@@ -136,6 +136,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "static"),
