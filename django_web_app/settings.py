@@ -88,13 +88,13 @@ WSGI_APPLICATION = "django_web_app.wsgi.application"
 
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "drivebox",
-        "USER": "postgres",
-        "PASSWORD": "root",
-        "HOST": "localhost",  # Set to the host where your PostgreSQL server is running
-        "PORT": "5432",        # Set to the port your PostgreSQL server is listening on
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME', 'drivebox'),  # Provide a default value if not set
+        'USER': os.environ.get('DB_USER', 'postgres'),  # Provide a default value if not set
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'root'),  # Provide a default value if not set
+        'HOST': os.environ.get('DB_HOST', 'localhost'),  # Provide a default value if not set
+        'PORT': os.environ.get('DB_PORT', '5432'),  # Provide a default value if not set
     }
 }
 
