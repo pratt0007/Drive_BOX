@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "blog.apps.BlogConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
+    "crispy_bootstrap4",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "whitenoise.runserver_nostatic",
+
     
 ]
 
@@ -58,6 +60,7 @@ CORS_ALLOWED_ORIGINS = [
     "*",
     # Add other trusted origins if needed
 ]
+
 
 ROOT_URLCONF = "django_web_app.urls"
 

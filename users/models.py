@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
-
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     image = models.ImageField(default="default.jpg", upload_to="profile_pics")
@@ -13,7 +12,10 @@ class Profile(models.Model):
     is_verified = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.user.username} Profile"
+        if self.user:
+            return f"{self.user.username} Profile"
+        else:
+            return "Profile without user"
 
     def save(self, *args, **kwargs):
         super(Profile, self).save(*args, **kwargs)
