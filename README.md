@@ -152,3 +152,19 @@ git push -u origin <your_branch_name>
     python manage.py runserver
     
    In your web browser enter the address : http://localhost:8000 or http://127.0.0.1:8000/
+
+## Picture of Project
+### Home Page
+![image](https://github.com/pratt0007/Drive_BOX/assets/100209212/5ff9ca80-f383-4214-82f8-00e0f8951faf)
+### New Post Page
+![image](https://github.com/pratt0007/Drive_BOX/assets/100209212/53dc0acb-f6d6-4251-83df-bbbe40da9dcf)
+### Profile Page
+![image](https://github.com/pratt0007/Drive_BOX/assets/100209212/04c1e09c-ec02-497e-b95a-9de0e37aad49)
+### Login Page
+![image](https://github.com/pratt0007/Drive_BOX/assets/100209212/d05ca788-6f40-43f1-906a-a26ca4d9d488)
+### Register Page
+![image](https://github.com/pratt0007/Drive_BOX/assets/100209212/588d939e-f1f8-405d-b4c6-06d4ef7a55f3)
+
+
+
+
